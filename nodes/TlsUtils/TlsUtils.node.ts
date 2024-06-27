@@ -23,7 +23,7 @@ export class TlsUtils implements INodeType {
 				type: 'string',
 				default: '',
 				placeholder: 'Hostname or IP address',
-				description: 'the address of the tls endpoint',
+				description: 'The address of the tls endpoint',
 				hint: 'webserver1.example.com',
 				required: true,
 			},
@@ -31,9 +31,9 @@ export class TlsUtils implements INodeType {
 				displayName: 'Port',
 				name: 'port',
 				type: 'number',
-				default: '443',
+				default: 443,
 				placeholder: 'Port number',
-				description: 'the port of the tls endpoint',
+				description: 'The port of the tls endpoint',
 				hint: '443',
 				required: true
 			},
@@ -43,9 +43,8 @@ export class TlsUtils implements INodeType {
 				type: 'string',
 				default: undefined,
 				placeholder: 'Server name',
-				description: 'the domain name to use in the SNI header',
+				description: 'The domain name to use in the SNI header',
 				hint: 'example.com',
-				required: false,
 			},
 			{
 				displayName: 'Additional Fields',
@@ -65,8 +64,7 @@ export class TlsUtils implements INodeType {
 							numberPrecision: 2,
 						},
 						description: 'Percent of certificate lifetime',
-						required: false
-					},
+				},
 				],
 			}
 		],
