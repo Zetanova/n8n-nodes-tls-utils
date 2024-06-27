@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-tls-utils",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "retrieve and validate ssl certificate from remote tcp endpoints",
   "keywords": [
     "n8n-community-node-package"

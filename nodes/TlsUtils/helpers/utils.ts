@@ -27,8 +27,8 @@ export async function testTls(entry:TlsEntry, gracePeriod:number = 0.1) {
 
     if(!tlsResult.cert) {
         return <TestResult> {
-            date: new Date(now).toISOString(),
             servername: tlsResult.servername,
+						date: new Date(now).toISOString(),
             status: 'error',
             validTo: '',
             graceDate: '',

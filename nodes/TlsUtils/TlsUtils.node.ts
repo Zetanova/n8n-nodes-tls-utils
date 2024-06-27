@@ -97,7 +97,10 @@ export class TlsUtils implements INodeType {
 
 			returnData.push({
 				pairedItem: { item: itemIndex },
-				json: { ... result, endpoint: { host: host, port: port } }
+				json: {
+					host: host, port: port,
+					... result
+				}
 			});
 		}
 
